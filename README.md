@@ -5,16 +5,16 @@
 
 Command for installing Alacritty in fedora is 
 
-'''
+```
 sudo dnf install Alacritty
-'''
+```
 
 Adding color schemes to Alacritty
 
-'''
+```
 mkdir -p ~/.config/alacritty/themes
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
-'''
+```
 
 Now to install Jetbrains nerd font, run,
 '''sudo dnf install cascadia-code-nf-fonts'''
