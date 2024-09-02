@@ -58,5 +58,43 @@ And to install starship, switch to su mode then run,
 dnf copr enable atim/starship
 ```
 Now to install
-```dnf install starship```
+```
+dnf install starship
+```
+Now shell colour script, you can get the color scripts from a handfull github accounts, take care,
+[charitarthchugh/shell-color-scripts](https://github.com/charitarthchugh/shell-color-scripts), [shreyas-a-s/shell-color-scripts](https://github.com/shreyas-a-s/shell-color-scripts)
+or [faraaz-baig/shell-color-scripts:](https://github.com/faraaz-baig/shell-color-scripts).
+To install, clone one github repo, and copy the scripts to your $PATH as shown.  
+ 
+```
+git clone https://github.com/faraaz-baig/shell-color-scripts.git
+cd shell-color-scripts
+rm -rf /opt/shell-color-scripts || return 1
+sudo mkdir -p /opt/shell-color-scripts/colorscripts || return 1
+sudo cp -rf colorscripts/* /opt/shell-color-scripts/colorscripts
+sudo cp colorscript.sh /usr/bin/colorscript
+```
+
+Now to change the user default shell 
+```chsh -s /bin/fish```
+ 
+You might need to log out then back in or restart your pc. 
+
+If when you open Alacritty your terminal it doesn't automatically load up fish, consider looking in the 
+ ```~/.config/fish/config.fish/config.fish``` file from that path out of the `/config.fish` folder 
+Try renaming the `config.fish` dir to `config.backup` using
+```
+mv ~/.config/fish/config.fish ~/.config/fish/config.backup
+```
+Now move or copy the config.fish
+```
+cp ~/.config/fish/config.backup/config.fish ~/.config/fish/
+```
+Again ,You might need to log out then back in or restart your pc for the changes to take effect.
+
+Yep the is it have fun and enjoy yourselves.
+![demo1](1.png)
+![demo2](2.png)
+
+
 
