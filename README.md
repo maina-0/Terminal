@@ -18,13 +18,16 @@ Adding color schemes to Alacritty
 ```
 mkdir -p ~/.config/alacritty/themes
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+git clone https://github.com/ProgrammingRainbow/Terminal.git
+cp ~/Terminal/.config/alacritty/alacritty.toml ~/.config/alactitty/
+
 ```
 
 Now to install Jetbrains nerd font, run,
 ```
 sudo dnf install cascadia-code-nf-fonts
 ```
-If the installation was successfull, in you local terminal you should be able to see the cascadia-code-nf-fonts as an option in the fonts.
+If the installation was successfull, you local terminal you should be able to see the cascadia-code-nf-fonts as an option in the fonts.
 
 After installing navigate to the alacritty.tmol
 ```
@@ -52,15 +55,17 @@ cp Terminal/.config/fish/config.fish ~/.config/fish/config.fish
 Install Eza,
 ```sudo dnf install eza```
 
-And to install starship, switch to su mode then run,
-`dnf copr enable atim/starship` to enable the COPR repository which provides the package for fedora. 
+And to install starship, you will run,
+`sudo dnf copr enable atim/starship` to enable the COPR repository which provides the starship package in fedora. 
 ```
-dnf copr enable atim/starship
+sudo dnf copr enable atim/starship
 ```
-Now to install
+Followed by
 ```
 dnf install starship
 ```
+ to install
+
 Now shell colour script, you can get the color scripts from a handfull github accounts, take care,
 [charitarthchugh/shell-color-scripts](https://github.com/charitarthchugh/shell-color-scripts), [shreyas-a-s/shell-color-scripts](https://github.com/shreyas-a-s/shell-color-scripts)
 or [faraaz-baig/shell-color-scripts:](https://github.com/faraaz-baig/shell-color-scripts).
