@@ -10,7 +10,7 @@ Command for installing Alacritty in fedora is
 Command for installing Alacritty in fedora is 
 
 ```
-sudo dnf install Alacritty
+sudo dnf install alacritty
 ```
 
 Adding color schemes to Alacritty
