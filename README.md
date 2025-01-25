@@ -19,7 +19,7 @@ Adding color schemes to Alacritty
 mkdir -p ~/.config/alacritty/themes
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 git clone https://github.com/ProgrammingRainbow/Terminal.git
-cp ~/Terminal/.config/alacritty/alacritty.toml ~/.config/alactitty/
+cp ~/Terminal/.config/alacritty/alacritty.toml ~/.config/alacritty/
 
 ```
 
@@ -50,7 +50,7 @@ To install fish, run the following command,
 Add default .config file for fish 
 ```
 mkdir -p ~/.config/fish/config.fish
-cp Terminal/.config/fish/config.fish ~/.config/fish/config.fish
+cp ~/Terminal/.config/fish/config.fish ~/.config/fish/config.fish
 ```
 Install Eza,
 ```sudo dnf install eza```
@@ -74,7 +74,7 @@ To install, clone one github repo, and copy the scripts to your $PATH as shown.
 ```
 git clone https://github.com/faraaz-baig/shell-color-scripts.git
 cd shell-color-scripts
-rm -rf /opt/shell-color-scripts || return 1
+sudo rm -rf /opt/shell-color-scripts
 sudo mkdir -p /opt/shell-color-scripts/colorscripts || return 1
 sudo cp -rf colorscripts/* /opt/shell-color-scripts/colorscripts
 sudo cp colorscript.sh /usr/bin/colorscript
